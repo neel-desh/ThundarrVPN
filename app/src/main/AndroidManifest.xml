@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neeldeshmukh.vpn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_google"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app_google"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Core.ViewUploads"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Core.CloudStorage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Contact.PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Misc.InternetUsage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Misc.SpeedTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chatbot.Chatbot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Payment.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.ResetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Payment.Donation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.Logout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.Login"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".Core.ServerActivity" /> -->
+        <activity
+            android:name=".Misc.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contact.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Startup.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Contact.FAQActivity"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".Misc.ReviewActivity" /> -->
+        <activity
+            android:name=".Core.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="de.blinkt.openvpn.DisconnectVPNActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:taskAffinity=".DisconnectVPN"
+            android:theme="@style/blinkt.dialog" />
+
+        <service
+            android:name="de.blinkt.openvpn.core.OpenVPNService"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

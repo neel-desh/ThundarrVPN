@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+   <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+<!--        FFFFD25E Colour yellow
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+-->
+        <item name="colorPrimary">#FFFFD25E</item>
+        <item name="colorPrimaryDark">#FFFFD25E</item>
+        <item name="colorAccent">#FFFFD25E</item>
+        <item name="android:windowBackground">#FFFFD25E</item>
+    </style>
+
+</resources>

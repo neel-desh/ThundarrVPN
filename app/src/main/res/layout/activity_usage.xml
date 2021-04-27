@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightBackground"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTitleBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lo_16dpGrid">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_app_google" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lo_16dpGrid">
+
+                    <TextView
+                        android:id="@+id/tv_usage_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Settings"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_about_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/lo_16dpGrid">
+
+                    <ImageView
+                        android:id="@+id/iv_go_forward"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginEnd="@dimen/lo_4dpGrid"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/ic_go_forward" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+<!--            Edit Profile -->
+
+            <View
+                android:id="@+id/viewUsageDark_5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayouteditprof"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_editprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Edit Profile" />
+
+                <TextView
+                    android:id="@+id/tv_usage_editprof_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Edit your profile" />
+
+            </LinearLayout>
+            <!--            Login/Signup-->
+
+            <View
+                android:id="@+id/viewUsageDark_11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_ls_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Logout" />
+
+                <TextView
+                    android:id="@+id/tv_usage_ls_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Logout from device!" />
+
+            </LinearLayout>
+            <!--           Usage report -->
+            <View
+                android:id="@+id/viewUsageDark_12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutUsagereport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_report_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Usage Report" />
+
+                <TextView
+                    android:id="@+id/tv_usage_report_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Check the usage of vpn " />
+            </LinearLayout>
+            <!--cloud Storage-->
+            <View
+                android:id="@+id/viewUsageDark_13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <!--            Donation-->
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCloudStorage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/lo_16dpGrid">
+
+                <Button
+                    android:id="@+id/uploadfilebtn"
+                    android:layout_width="154dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lo_16dpGrid"
+                    android:layout_marginRight="@dimen/lo_8dpGrid"
+                    android:background="@drawable/button_connect"
+                    android:padding="@dimen/lo_8dpGrid"
+                    android:text="Upload File"
+                    android:textAllCaps="false">
+
+                </Button>
+
+                <Button
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/downloadfilebtn"
+                    android:background="@drawable/button_connect"
+                    android:padding="@dimen/lo_8dpGrid"
+                    android:text="Download files"
+                    android:textAllCaps="false"></Button>
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv_usage_cloudStorage_title"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textSize="@dimen/ts_Body1"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:text="Cloud Storage" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv_usage_cloudStorage_decription"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textSize="@dimen/ts_Body2"-->
+                <!--                    android:text="Secure Personal Cloud Storage" />-->
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewUsageDark_9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDonation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_donation_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Donation" />
+
+                <TextView
+                    android:id="@+id/tv_usage_donation_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Support our developers" />
+
+            </LinearLayout>
+<!--Speed Meter-->
+            <View
+                android:id="@+id/viewUsageDark_15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSpeedMeter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_speed_meter_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Speed Meter" />
+
+                <TextView
+                    android:id="@+id/tv_usage_speed_meter_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Check your Internet Speed" />
+
+            </LinearLayout>
+<!--End Speed Meter-->
+<!--Password Generator-->
+            <View
+                android:id="@+id/viewUsageDark_14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPassGen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_passgen_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Password Generator" />
+
+                <TextView
+                    android:id="@+id/tv_usage_passgen_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Click to copy secure password to clipboard" />
+
+            </LinearLayout>
+<!--    Password generater end-->
+            <View
+                android:id="@+id/viewUsageDark_16"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_16"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFingerAuth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_finger_auth_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Enable Screen Lock" />
+
+                <Switch
+                    android:id="@+id/switch_usage_finger_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="14sp"
+                    android:text="Enable screen lock to open the app" />
+
+            </LinearLayout>
+<!--    FAQ -->
+            <View
+                android:id="@+id/viewUsageDark_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFAQ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/lo_16dpGrid">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_usage_faq_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FAQ"
+                            android:textSize="@dimen/ts_Body1"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_usage_faq_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Any questions?"
+                            android:textSize="@dimen/ts_Body2" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_go_forward" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--            Chatbot-->
+            <View
+                android:id="@+id/viewUsageDark_10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutChatbot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_chatbot_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Chatbot" />
+
+                <TextView
+                    android:id="@+id/tv_usage_chatbot_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Ask questions regarding usages" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/viewUsageDark_4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDarkMode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_dark_mode_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Dark theme" />
+
+                <Switch
+                    android:id="@+id/switch_usage_dark_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="14sp"
+                    android:text="Enable dark theme throughout the app" />
+
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:id="@+id/viewUsageDark_5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:background="@color/colorDarkList" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/viewUsageLight_5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:background="@color/colorLightList" />-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linearLayoutBattery"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="@dimen/lo_16dpGrid">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_usage_battery_title"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Open Settings"-->
+<!--                    android:textSize="@dimen/ts_Body1"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_usage_battery_description"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Allow run in background"-->
+<!--                    android:textSize="@dimen/ts_Body2" />-->
+
+<!--            </LinearLayout>-->
+
+            <View
+                android:id="@+id/viewUsageDark_6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/lo_16dpGrid"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_usage_privacy_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold"
+                    android:text="Privacy policy" />
+
+                <TextView
+                    android:id="@+id/tv_usage_privacy_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Read our privacy and policies" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewUsageDark_7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutContact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/lo_16dpGrid">
+
+                <TextView
+                    android:id="@+id/tv_usage_contact_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_usage_contact_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send us feedback"
+                    android:textSize="@dimen/ts_Body2" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewUsageDark_8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorDarkList" />
+
+            <View
+                android:id="@+id/viewUsageLight_8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorLightList" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutShare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="@dimen/lo_16dpGrid">
+
+                <TextView
+                    android:id="@+id/tv_usage_share_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:textSize="@dimen/ts_Body1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_usage_share_decription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ts_Body2"
+                    android:text="Tell your friends" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+<!--            End NEEL-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

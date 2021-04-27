@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/lo_4dpGrid"
+            android:layout_marginRight="@dimen/lo_8dpGrid"
+            android:background="@drawable/button_disconnect"
+
+            android:layout_above="@+id/connectionStatus">
+
+            <TextView
+                android:id="@+id/logTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+               android:textSize="18dp"
+                android:gravity="bottom"
+
+                android:text="Not Connected"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/connectionStatus"
+            android:layout_width="373dp"
+            android:layout_height="353dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="245dp"
+            android:orientation="vertical">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/la_animation"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/ninjainsecure" />
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:text="Connection Status"-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/durationTv"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:text="Duration: 00:00:00"-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textSize="14sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/lastPacketReceiveTv"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:text="Packet Received:"-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textSize="14sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/byteInTv"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:text="Bytes In: "-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textSize="14sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/byteOutTv"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:text="Bytes OUT: "-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textSize="14sp" />-->
+
+            <Button
+                android:id="@+id/vpnBtn"
+                android:layout_width="190dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_connect"
+                android:tag="1"
+                android:text="Connect"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <!--        <ImageView-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_width="55dp"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:id="@+id/selectedServerIcon"-->
+<!--            android:src="@drawable/usa_flag"/>-->
+    </RelativeLayout>
+</layout>

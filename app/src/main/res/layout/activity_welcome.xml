@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    tools:context=".Startup.WelcomeActivity">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_update_details"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="invisible"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/ll_welcome_details"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_welcome_loading"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="124dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <TextView-->
+<!--            android:id="@+id/tv_welcome_status"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/lo_4dpGrid"-->
+<!--            android:text="STARTING"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        tools:layout_editor_absoluteX="84dp"-->
+<!--        tools:layout_editor_absoluteY="480dp" />-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scrollbars="none"-->
+<!--        tools:layout_editor_absoluteX="88dp"-->
+<!--        tools:layout_editor_absoluteY="250dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="176dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/welcome" />
+
+    <TextView
+        android:id="@+id/tv_welcome_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free, Unlimited, Unblock"
+        android:textColor="#535252"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:gravity="center|center_vertical"
+        android:text="THUNDER VPN"
+        android:textColor="#373434"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_welcome_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="@dimen/lo_8dpGrid"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                app:lottie_loop="true"-->
+<!--                app:lottie_rawRes="@raw/newupdate" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_welcome_version"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/lo_8dpGrid"-->
+<!--                android:gravity="center"-->
+<!--                android:text="2.8.2700"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="@dimen/ts_Body2"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_welcome_title"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/lo_8dpGrid"-->
+<!--                android:gravity="center"-->
+<!--                android:text="New Update is Available"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="@dimen/ts_Body1"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_welcome_description"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/lo_8dpGrid"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Fixed Bugs and Improved performance. Added few more servers!"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="@dimen/ts_Body2" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_welcome_size"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/lo_8dpGrid"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Size 3.5MB"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="@dimen/ts_Body2"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_welcome_update"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="@dimen/lo_8dpGrid"-->
+<!--                android:background="@drawable/button_update"-->
+<!--                android:text="Update"-->
+<!--                android:textColor="@color/colorWhite" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_welcome_later"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="@dimen/lo_8dpGrid"-->
+<!--                android:background="@drawable/button_later"-->
+<!--                android:text="Later"-->
+<!--                android:textColor="@color/colorWhite" />-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+    <!--    <LinearLayout-->
+<!--        android:id="@+id/ll_welcome_details"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/lo_8dpGrid"-->
+<!--        android:gravity="center"-->
+<!--        android:visibility="gone"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@color/colorYellow"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/ic_app_google" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_welcome_app"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/lo_4dpGrid"-->
+<!--            android:text="@string/Buzz"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
