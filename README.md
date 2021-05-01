@@ -1,15 +1,13 @@
 # Thundarrr VPN
 
 ## Features of Applcation.
-
-# A) Authentication
 1) Login, Register, Forgot Password, Change Password, using firebase.
-
-# B) VPN 
-1) Multiple Vpn severs to connect from.
-
-# C) Cloud Storage
-1) Using firebase storage as cloud storage options.
+2) Multiple Vpn severs to connect from.
+3) Using firebase storage as cloud storage options.
+4) Chatbot using dialog flow.
+5) Password encrypter.
+6) Speed test inbuilt.
+7) and much more.
 
 # Screenshots of SYSTEM:
 ![Screenshot](https://raw.githubusercontent.com/neel-desh/ThundarrVPN/main/Screenshot/VPNAPP-neel-desh%20(2).jpg)
